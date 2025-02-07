@@ -140,8 +140,8 @@ button:hover {
 }
 
 .question-tile2 {
-    background: rgba(255, 255, 255, 0.294);
-    padding: 1000px;
+    background: rgba(255, 255, 255, 0.558);
+    padding: 100px;
     border-radius: 20px;
     text-align: center;
     width: 50%;
@@ -151,3 +151,4 @@ button:hover {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
