@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vals 2025 - Ms. Benjamin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lyra&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Page 1: Welcome & Gallery -->
+    <div class="container" id="page1">
+        <h1>Welcome to Vals 2025, Ms. Benjamin.</h1>
+        <h2>This is our first ever Valentine's Day together, and unfortunately, we are not together in person to celebrate. But I know and believe this will be the only Val's Day we are celebrating apart!</h2>
+        <div class="gallery">
+            <video src="video1.mp4" autoplay loop muted class="large-video"></video>
+            <video src="video2.mp4" autoplay loop muted class="large-video"></video>
+        </div>
+        <p>Are we done here? Come, let's explore more:</p>
+        <button onclick="nextPage(2)">Next</button>
+    </div>
+
+    <!-- Page 2: Valentine Question -->
+    <div class="container valentine-page" id="page2" style="display: none;">
+        <div class="question-tile">
+            <h1>Ms. Patience Naa Ode Benjamin!</h1>
+            <h2>Be my Valentine 2K25?</h2>
+            <form id="valentineForm">
+                <label><input type="radio" name="valentine" value="Yes"> Yes</label>
+                <label><input type="radio" name="valentine" value="No"> No</label>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="response"></p>
+            <div class="button-group">
+                <button onclick="prevPage(1)">Back</button>
+                <button onclick="nextPage(3)">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 3: Itinerary -->
+    <div class="container" id="page3" style="display: none;">
+        <h1>Itinerary:</h1>
+        <p><b>Friday Morning:</b> Fasting</p>
+        <p><b>Friday Afternoon:</b> Fasting</p>
+        <p><b>Friday Evening:</b> Fast is over: Anything you wanna eat is on me!</p>
+        <p><b>Saturday Morning:</b> Rest</p>
+        <p><b>Saturday Afternoon:</b> Spa: Niobe Spa (Lizy Sports Complex) @ 12:30pm</p>
+        <p><b>Saturday Evening:</b> Get your favorite wine, order any food on Papi, and get comfy to watch a movie on Netflix lol.</p>
+        <button onclick="prevPage(2)">Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
